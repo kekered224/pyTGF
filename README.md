@@ -5,7 +5,7 @@
 `pyTGF` is a Python reimplementation of the MATLAB TGF software for calculating
 full-scale topographic and RTM (Residual Terrain Model) gravitational fields.
 It mirrors the functionality of `TC_GUI.m` from the original TGF software
-(Yang, Hirt, Pail, 2019) and produces numerically equivalent results —
+(Yang, Hirt, Pail, 2020) and produces numerically equivalent results —
 with **Numba-accelerated kernels that run several times faster than the
 MATLAB original**.
 
@@ -332,10 +332,30 @@ pyTGF/
 
 pyTGF is a Python reimplementation of the algorithmic flow of the original
 MATLAB TGF software. We gratefully acknowledge the authors of the original
-software:
+software. If you use pyTGF in your research, please cite the original TGF
+publication:
 
-> M. Yang, C. Hirt, R. Pail (2019). *TGF: A New MATLAB-based Software for
-> Terrain Gravity Field Calculation.* Computers & Geosciences.
+> M. Yang, C. Hirt, R. Pail (2020). *TGF: A New MATLAB-based Software for
+> Terrain-related Gravity Field Calculations.* **Remote Sensing**, 12(7), 1063.
+> https://doi.org/10.3390/rs12071063
+
+BibTeX:
+
+```bibtex
+@article{yang2020tgf,
+  author  = {Yang, Meng and Hirt, Christian and Pail, Roland},
+  title   = {{TGF}: A New {MATLAB}-based Software for Terrain-related Gravity Field Calculations},
+  journal = {Remote Sensing},
+  volume  = {12},
+  number  = {7},
+  pages   = {1063},
+  year    = {2020},
+  doi     = {10.3390/rs12071063}
+}
+```
+
+The original TGF software is available from the
+[IAPG, TU München](https://www.asg.ed.tum.de/iapg/forschung/schwerefeld/tgf/).
 
 The four-zone integration strategy, mass element formulations (polyhedron:
 Tsoulis 2012; prism: Nagy et al. 2000/2002; tesseroid: Grombein et al. 2013),
